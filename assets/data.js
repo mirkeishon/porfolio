@@ -17,7 +17,7 @@ const skills = [
     },
     {
         skill: "Typescript",
-        proficiency: 70,
+        proficiency: 50,
     }
 ]
 
