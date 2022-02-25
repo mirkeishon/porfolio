@@ -14,7 +14,7 @@ const Header = ()=>{
                     </div>
                     <div className="mt-4 mb-4">                   
                         <p className="flex items-center text-lg font-medium text-neutral-700"><span className="mr-5"><FaEnvelope/></span>milkercastro66@gmail.com</p>
-                        <p className="flex items-center text-lg font-medium text-neutral-700"><span className="mr-5"><FaPhoneAlt/></span>(+58) 426 486 4691</p>
+                        <p className="flex items-center text-lg font-medium text-neutral-700"><span className="mr-5"><FaPhoneAlt/></span>(+58) 416 520 6327</p>
                     </div>
                 </div>
                 <div>
