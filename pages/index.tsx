@@ -45,7 +45,7 @@ export const getServerSideProps = async () => {
       slug
       
     }[0...3]`;
-  const projectsQuery = `*[_type == 'project'] | order(_createdAt asc){
+  const projectsQuery = `*[_type == 'project'] | order(publishedAt desc){
     _id,
     title,
     description,

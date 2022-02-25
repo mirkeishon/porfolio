@@ -63,7 +63,7 @@ const Projects = ({projects, tags}: Props) => {
 export default Projects;
 
 export const getServerSideProps = async () => {
-    const projectsQuery = `*[_type == 'project']{
+    const projectsQuery = `*[_type == 'project'] | order(publishedAt desc){
         _id,
         title,
         description,
