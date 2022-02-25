@@ -37,7 +37,7 @@
 
 ## Overview
 
-![homepage](https://user-images.githubusercontent.com/94877748/155590908-9b6f7072-f6f7-41ca-908c-2fbe4f544728.png)
+![portfolio](https://user-images.githubusercontent.com/94877748/155682835-3958ff58-edb0-48c5-b49f-fa2be3a37f61.png)
 
 - You can find the demo in this [url](https://porfolio-two-pied.vercel.app/)
 
