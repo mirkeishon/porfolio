@@ -18,7 +18,7 @@ const Projects = ({projects, tags}: Props) => {
         const newProjects = projects.filter((project)=>{      
             return project.tags.includes(tag.innerText);
         })
-        setAllProjects([...hola])
+        setAllProjects([...newProjects])
     }
     
     
