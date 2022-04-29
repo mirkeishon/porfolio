@@ -16,7 +16,7 @@ const Projects = ({projects, tags}: Props) => {
     const filterItems = (event : React.MouseEvent<HTMLButtonElement>) => {
         const tag: HTMLButtonElement = event.currentTarget;
         const newProjects = projects.filter((project)=>{      
-            return newProjects.tags.includes(tag.innerText);
+            return project.tags.includes(tag.innerText);
         })
         setAllProjects([...hola])
     }
