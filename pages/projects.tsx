@@ -36,9 +36,9 @@ const Projects = ({projects, tags}: Props) => {
                     return <button onClick={filterItems} key={tag._id} className="whitespace-nowrap hover:bg-blue-500 hover:text-white text-sm hover:border-blue-500 text-neutral-400 border-neutral-400 border mr-3 rounded-xl p-0.5 pl-4 pr-4">{tag.title}</button>
                 })}
             </div>
-            <div className="md:flex md:flex-wrap md:justify-start">
+            <div className="md:grid grid-cols-3">
                 {allProjects.map((project) => {
-                    return <div key={project._id} className="md:w-1/4 mt-4 mb-4 overflow-hidden md:mr-4">
+                    return <div key={project._id} className="m-auto mt-4 mb-4 pr-4 pl-4 max-w-xs">
                             {project.mainImage ?
                                 <img className="mt-4 w-full h-40 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out" src={urlFor(project.mainImage).url()!} alt="project image" /> :
                                 <img className="mt-4 w-full h-40 rounded-xl" src='/logo.jpg' alt="logo" />}
