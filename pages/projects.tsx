@@ -15,8 +15,8 @@ const Projects = ({projects, tags}: Props) => {
     
     const filterItems = (event : React.MouseEvent<HTMLButtonElement>) => {
         const tag: HTMLButtonElement = event.currentTarget;
-        const hola = projects.filter((project)=>{      
-            return project.tags.includes(tag.innerText);
+        const newProjects = projects.filter((project)=>{      
+            return newProjects.tags.includes(tag.innerText);
         })
         setAllProjects([...hola])
     }
@@ -36,7 +36,7 @@ const Projects = ({projects, tags}: Props) => {
                     return <button onClick={filterItems} key={tag._id} className="whitespace-nowrap hover:bg-blue-500 hover:text-white text-sm hover:border-blue-500 text-neutral-400 border-neutral-400 border mr-3 rounded-xl p-0.5 pl-4 pr-4">{tag.title}</button>
                 })}
             </div>
-            <div className="md:flex md:flex-wrap md:justify-between">
+            <div className="md:flex md:flex-wrap md:justify-start">
                 {allProjects.map((project) => {
                     return <div key={project._id} className="md:w-1/4 mt-4 mb-4 overflow-hidden md:mr-4">
                             {project.mainImage ?
