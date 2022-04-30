@@ -38,13 +38,13 @@ const Projects = ({projects, tags}: Props) => {
             </div>
             <div className="md:grid grid-cols-3">
                 {allProjects.map((project) => {
-                    return <div key={project._id} className="m-auto mt-4 mb-4 pr-4 pl-4 max-w-xs">
+                    return <div key={project._id} className="m-auto mt-4 mb-4 pr-4 pl-4 max-w-xs relative">
                             {project.mainImage ?
                                 <img className="mt-4 w-full h-40 rounded-xl hover:scale-105 transition-transform duration-200 ease-in-out" src={urlFor(project.mainImage).url()!} alt="project image" /> :
                                 <img className="mt-4 w-full h-40 rounded-xl" src='/logo.jpg' alt="logo" />}
                             <p className="mt-4 text-lg font-semibold text-neutral-700">{project.title}</p>
                             <p className="mt-4 text-base font-medium text-neutral-400">{project.description}</p>
-                            <div className="flex space-x-4 mt-4">
+                            <div className="flex space-x-4 mt-4 absolute bottom-0">
                                 <a className="flex items-center bg-blue-500 text-white px-2 py-1 rounded-3xl" href={project.demo} target='_blank'>
                                     Demo
                                 </a>
